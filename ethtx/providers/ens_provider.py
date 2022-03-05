@@ -46,7 +46,7 @@ class Web3ENSProvider(ENSProviderBase):
 
     def address(self, provider: Web3, name: str) -> str:
         ns = self._set_provider(provider)
-        address = ns.address(name=name)
+        #address = ns.address(name=name)
 
         if address:
             log.info("ENS resolved name: %s to address: %s", name, address)
